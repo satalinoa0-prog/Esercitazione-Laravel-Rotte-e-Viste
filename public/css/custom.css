@@ -1,0 +1,42 @@
+:root {
+    --brand: #8b4a2b;
+    --brand-light: #fbeee3;
+    --accent: #e8a87c;
+}
+
+.bg-brand { background-color: var(--brand); }
+.text-brand { color: var(--brand); }
+.bg-brand-light { background-color: var(--brand-light); }
+
+.btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+.btn-brand:hover {
+    background-color: #6f3a21;
+    border-color: #6f3a21;
+    color: #fff;
+}
+
+.hero {
+    background: linear-gradient(rgba(60, 30, 15, .55), rgba(60, 30, 15, .55)),
+                url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80') center/cover;
+    min-height: 70vh;
+    color: #fff;
+}
+
+.card-service { transition: transform .2s, box-shadow .2s; }
+.card-service:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15);
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--brand-light);
+    color: var(--brand);
+    font-size: 1.8rem;
+}
